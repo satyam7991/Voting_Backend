@@ -7,7 +7,7 @@ const EmployeeModel = require('./models/employee')
 const app = express()
 app.use(express.json())
 app.use(cors( {
-    origin: 'http://https://votingapp-ashy.vercel.app',
+    origin: 'https://votingapp-ashy.vercel.app',
     credentials: true,
 }))
 
