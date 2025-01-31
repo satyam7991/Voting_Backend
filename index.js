@@ -6,7 +6,10 @@ const EmployeeModel = require('./models/employee')
 
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors( {
+    origin: 'http://https://votingapp-ashy.vercel.app',
+    credentials: true,
+}))
 
 try{
     mongoose.connect('mongodb+srv://sattyam232106:IvedrDOIkPjJc1d9@mycluster.pbqrk.mongodb.net/?retryWrites=true&w=majority&appName=myCluster');
