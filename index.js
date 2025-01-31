@@ -9,8 +9,7 @@ app.use(express.json())
 app.use(cors())
 
 try{
-    // mongoose.connect('mongodb+srv://sattyam232106:Satyam7991@mycluster.pbqrk.mongodb.net/');
-    mongoose.connect('mongodb://localhost:27017/employee');
+    mongoose.connect('mongodb+srv://sattyam232106:IvedrDOIkPjJc1d9@mycluster.pbqrk.mongodb.net/?retryWrites=true&w=majority&appName=myCluster');
     console.log("Mongodb connected");
     
 }catch(e){
